@@ -13,7 +13,7 @@ Source: statsim.net - based on their flight ID
 
 - ctp2025w_scrape.R - "quick" and dirty script to scrape data from statsim.net
 - ctp2025w_analysis.R - descriptive analysis, EDA, data viz
-- data/ctp_data.csv is the main file with all the data. The .RData containers are interim/backup saves during the scraping process and can be ignored
+- **data/ctp_data.csv is the main file with all the data.** The .RData containers are interim/backup saves during the scraping process and can be ignored
 
 ### Limitations
 - the data does not distinguish between normal disconnects and sim crashes
