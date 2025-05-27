@@ -6,6 +6,7 @@
 Based on flights that filed a flightplan from/to one of the CTP airports
    and actually departed between 0800z and 1900z on the 26th of April
 Source: statsim.net - based on their flight ID
+
 (Script pauses to limit stress on statsim.net - I donated coffee money :))
 
 ### Limitations
@@ -16,7 +17,7 @@ Source: statsim.net - based on their flight ID
 - addons/sims cannot be distinguished
 - flights cannot be distinguished between traffic with CTP slots or not.
 - no filtering on airport slot times; some may have departed outside event
-- no filtering whether event pairs were flown
+- no filtering whether event pairs were flown or not
 
 That said, the above limitations, especially concerning resuming one's flight
 mid-air are assumed to hold constant across pilots/addons.
