@@ -95,7 +95,7 @@ for (i in 1:length(adeps)) {
 }
 
 ## interim save
-save(ctp_deps, file = "data/2025W/ctp_deps.RData")
+save(ctp_deps, file = "data/ctp_deps.RData")
 
 # Fetch flight data per flight id -----------------------------------------
 
@@ -164,7 +164,7 @@ for (i in 1:length(fltd_id)) {
 }
 
 ## save
-save(fltd_data, file = "data/2025W/fltd_data.RData")
+save(fltd_data, file = "data/fltd_data.RData")
 
 # fix some weird shit
 fltd_data <- fltd_data |> 
@@ -175,5 +175,5 @@ ctp_data <- ctp_deps |>
   left_join(fltd_data)
 
 # save full data set
-save(ctp_data, file = "data/2025W/ctp_data.RData")
-write.table(ctp_data, file = "data/2025W/ctp_data.csv", quote = FALSE, sep = "\t", row.names = FALSE)
+save(ctp_data, file = "data/ctp_data.RData")
+write.table(ctp_data, file = "data/ctp_data.csv", quote = FALSE, sep = "\t", row.names = FALSE)
