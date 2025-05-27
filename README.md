@@ -2,12 +2,17 @@
 
 ## Analysis of CTP 2025W
 
-### Source
+### Data source
 Based on flights that filed a flightplan from/to one of the CTP airports
    and actually departed between 0800z and 1900z on the 26th of April
 Source: statsim.net - based on their flight ID
 
 (Script pauses to limit stress on statsim.net - I donated coffee money :))
+
+### Files
+
+- ctp2025w_scrape.R - "quick" and dirty script to scrape data from statsim.net
+- ctp2025w_analysis.R - descriptive analysis, EDA, data viz
 
 ### Limitations
 - the data does not distinguish between normal disconnects and sim crashes
