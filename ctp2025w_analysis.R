@@ -157,14 +157,14 @@ ggsave(filename = "plots/last_seen.pdf", device = cairo_pdf, height = 6, width =
 # Modelling ---------------------------------------------------------------
 library(party)
 
-# most variables make no sense, method is quick-and-dirty, but it identifies
-# two groups with significant difference between the groups, but no difference
-# between members of each group. Variables not in final tree do not contribute
-# to explaining the variance.
+# method is quick-and-dirty, but it identifies two groups
+# main insight so far: two groups with significant difference between the groups
+# but no difference between members of each group. Variables not in final tree
+# do not contribute to explaining the variance.
 
 # Create the tree.
 output.tree <- ctree(
-  arrived ~ factor(aircraft_type) + factor(ades) + factor(adep) + as.numeric(flight_id), 
+  arrived ~ factor(aircraft_type) + factor(adep) + as.numeric(flight_id), 
   data = ctp)
 
 # Plot the tree.
